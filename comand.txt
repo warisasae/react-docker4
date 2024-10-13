@@ -1,0 +1,10 @@
+docker ps --all 
+docker run -d -p 3000:3000 --name react-docker warisa2473/react-docker-test4:0.1
+docker ps 
+docker stop react-docker
+docker rm react-docker  
+docker login
+docker images
+docker push warisa2473/react-docker-test4:0.1
+git remote -v
+git remote remove origin
